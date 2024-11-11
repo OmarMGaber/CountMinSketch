@@ -93,3 +93,21 @@ CounterMinSketch.prototype.processStream = function(stream) {
   });
 };
 
+// /*
+//   * @param {Readable} - stream : A readable stream that emits data
+//   * TODO: @returns a top K list of items with the highest frequency (Heavy Hitters)
+// */
+// CounterMinSketch.prototype.processStream = function(stream) {
+//   stream.on('data', (chunk) => {
+//     const items = chunk.toString().split('\n'); //.split(' ');
+//     items.forEach((item) => {
+//       if (item === '') return;
+//       console.log(`Adding item: ${item}`);
+//       this.add(item);
+//     });
+//   });
+
+//   stream.on('end', () => {
+//     console.log('Processing stream completed');
+//   });
+// }
